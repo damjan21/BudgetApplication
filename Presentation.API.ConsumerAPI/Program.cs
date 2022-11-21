@@ -1,4 +1,21 @@
+using Core.Domain.Interfaces;
+using Core.Domain.Interfaces.TypeInterface;
+using Core.Domain.Services;
+using Core.Infrastructures.Data.SQLServer.Data;
+using Core.Infrastructures.Data.SQLServer.Repository.TypeRepository;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("AppDb")));
+
+
+builder.Services.AddScoped<IAppUnitOfWork, AppUnitOfWork>();
+
+builder.Services.AddTransient<IUserRepository, UserRepository>();
+
+builder.Services.AddTransient<UserService>();
 
 // Add services to the container.
 

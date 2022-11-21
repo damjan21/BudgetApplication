@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\Core.Infrastructures.Data.SQLServer\Core.Infrastructures.Data.SQLServer.csproj" />
   </ItemGroup>
 
 </Project>

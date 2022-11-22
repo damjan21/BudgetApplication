@@ -16,9 +16,11 @@ namespace Core.Domain.Entites.Users
                 throw new ArgumentException("Email is too long.");
             EmailFormatExtension.CheckEmailFormat(email);
 
+            //string userName = EmailFormatExtension.GetEmailWithoutDomain(email);
+
             Id = id;
             Email = email;
-            UserName = EmailFormatExtension.GetEmailWithoutDomain(email);
+            UserName = email;
         }
     }
 }

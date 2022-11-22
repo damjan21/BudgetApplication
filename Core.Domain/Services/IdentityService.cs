@@ -1,5 +1,6 @@
 ﻿using Common.Constants;
 using Core.Domain.Entites.Users;
+using Core.Domain.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Core.Domain.Services
 {
-    public class IdentityService
+    public class IdentityService : IIdentityService
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
@@ -24,7 +25,7 @@ namespace Core.Domain.Services
         {
             ApplicationUser applicationUser = new(id, email);
             IdentityResult result = await _userManager.CreateAsync(applicationUser, password);
-           
+
             await _userManager.AddToRoleAsync(applicationUser, ApplicationUserRole.CUSTOMER);
         }
 

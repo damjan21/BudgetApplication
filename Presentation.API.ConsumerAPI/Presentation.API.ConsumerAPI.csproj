@@ -15,7 +15,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Common.Constants\Common.Constants.csproj" />
+    <ProjectReference Include="..\Common.Extensions\Common.Extensions.csproj" />
+    <ProjectReference Include="..\Core.Domain\Core.Domain.csproj" />
     <ProjectReference Include="..\Core.Infrastructures.Data.SQLServer\Core.Infrastructures.Data.SQLServer.csproj" />
+    <ProjectReference Include="..\Core.Infrastructures.Identity.EntityFramework\Core.Infrastructures.Identity.EntityFramework.csproj" />
   </ItemGroup>
 
 </Project>

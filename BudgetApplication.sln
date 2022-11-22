@@ -13,19 +13,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{7E2844B0-5
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructures", "Infrastructures", "{56654C3B-563A-4CC1-8891-4691E9725745}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentation.API.ConsumerAPI", "Presentation.API.ConsumerAPI\Presentation.API.ConsumerAPI.csproj", "{CA6DA3CF-BA08-482C-BA76-6FF1D6B9E5B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Presentation.API.ConsumerAPI", "Presentation.API.ConsumerAPI\Presentation.API.ConsumerAPI.csproj", "{CA6DA3CF-BA08-482C-BA76-6FF1D6B9E5B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Constants", "Common.Constants\Common.Constants.csproj", "{A8BD3D39-8998-4CA6-9FE4-06F4E1FDF9CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.Constants", "Common.Constants\Common.Constants.csproj", "{A8BD3D39-8998-4CA6-9FE4-06F4E1FDF9CB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{5CE17C95-4A60-4CC8-BAAE-1F188F6553F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Infrastructures.Data.SQLServer", "Core.Infrastructures.Data.SQLServer\Core.Infrastructures.Data.SQLServer.csproj", "{2B3BBF4B-7D39-47C0-B2FC-E1AB225BB3FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Infrastructures.Data.SQLServer", "Core.Infrastructures.Data.SQLServer\Core.Infrastructures.Data.SQLServer.csproj", "{2B3BBF4B-7D39-47C0-B2FC-E1AB225BB3FE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Identity", "Identity", "{68D3E1EF-9A7C-476A-96C1-FA0D658A4D2C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Domain", "Core.Domain\Core.Domain.csproj", "{5733B6D8-54E5-4848-8A3D-C0B26592CDA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Domain", "Core.Domain\Core.Domain.csproj", "{5733B6D8-54E5-4848-8A3D-C0B26592CDA9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Infrastructures.Identity.EntityFramework", "Core.Infrastructures.Identity.EntityFramework\Core.Infrastructures.Identity.EntityFramework.csproj", "{D8EC29DD-3722-4AAD-835C-5BCEBA601EDA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Infrastructures.Identity.EntityFramework", "Core.Infrastructures.Identity.EntityFramework\Core.Infrastructures.Identity.EntityFramework.csproj", "{D8EC29DD-3722-4AAD-835C-5BCEBA601EDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Extensions", "Common.Extensions\Common.Extensions.csproj", "{7FAA74EA-B40E-4E77-AFAE-6C0942A52A63}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +55,10 @@ Global
 		{D8EC29DD-3722-4AAD-835C-5BCEBA601EDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8EC29DD-3722-4AAD-835C-5BCEBA601EDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8EC29DD-3722-4AAD-835C-5BCEBA601EDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FAA74EA-B40E-4E77-AFAE-6C0942A52A63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FAA74EA-B40E-4E77-AFAE-6C0942A52A63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FAA74EA-B40E-4E77-AFAE-6C0942A52A63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FAA74EA-B40E-4E77-AFAE-6C0942A52A63}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,6 +73,7 @@ Global
 		{68D3E1EF-9A7C-476A-96C1-FA0D658A4D2C} = {56654C3B-563A-4CC1-8891-4691E9725745}
 		{5733B6D8-54E5-4848-8A3D-C0B26592CDA9} = {7E2844B0-54EA-4ED4-8676-D147FFF682DF}
 		{D8EC29DD-3722-4AAD-835C-5BCEBA601EDA} = {68D3E1EF-9A7C-476A-96C1-FA0D658A4D2C}
+		{7FAA74EA-B40E-4E77-AFAE-6C0942A52A63} = {43404459-1E1B-45F8-B246-7CA63F4129E7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E5643ACE-3E4E-4FE4-82A8-8CE5E676B5E3}

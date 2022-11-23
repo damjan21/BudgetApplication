@@ -11,18 +11,18 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Core.Infrastructures.Identity.EntityFramework.Data
 {
-    public class IdentityDbContext : IdentityDbContext<IdentityUser<Guid>, IdentityRole<Guid>, Guid>
+    public class IdentityDbContextCustom : IdentityDbContext<IdentityUser<Guid>, IdentityRole<Guid>, Guid>
     {
         public DbSet<ApplicationUser> ApplicationUsers => Set<ApplicationUser>();
 
-        public IdentityDbContext(DbContextOptions<IdentityDbContext> options) : base(options)
+        public IdentityDbContextCustom(DbContextOptions<IdentityDbContextCustom> options) : base(options)
         {
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.ApplyConfigurationsFromAssembly(typeof(IdentityDbContext).Assembly);
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(IdentityDbContextCustom).Assembly);
 
             modelBuilder.Entity<ApplicationRole>().HasData(
                 new ApplicationRole
